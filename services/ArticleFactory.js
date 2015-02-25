@@ -5,6 +5,6 @@ hackNewsClone.factory('ArticleFactory', function ArticleFactory(){
     factory.articles.push({ name: factory.articleName, id: factory.articles.length + 1, comments: [] });
     factory.articleName = null;
   };
-  
+
   return factory;
 });

@@ -1,10 +1,19 @@
-<div class="row">
+<div class="row" ng-controller="ArticlesCtrl">
   <h1>News Articles</h1>
-  <div ng-controller="ArticlesCtrl">
+  <div>
     <ul>
       <li ng-repeat="item in articles">
         {{item.name}}
       </li>
     </ul>
+  </div>
+  <div class="row">
+    <h2>Add a article</h2>
+    <form ng-submit="ArticleFactory.addArticle()" role ="form">
+      <div class="form-group">
+        <input type="text" ng-model="ArticleFactory.articleName" placeholder="title of article">
+      </div>
+      <button type="submit">create article</button>
+    </form>
   </div>
 </div>

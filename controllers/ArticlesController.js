@@ -1,4 +1,4 @@
 hackNewsClone.controller('ArticlesCtrl', function ArticlesCtrl($scope, ArticleFactory){
-  $scope.article = ArticleFactory.articles;
+  $scope.articles = ArticleFactory.articles;
   $scope.ArticleFactory = ArticleFactory;
 });
