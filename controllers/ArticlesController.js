@@ -1,5 +1,4 @@
-hackNewsClone.controller('ArticlesCtrl', function ArticlesCtrl($scope){
-  $scope.articles = [
-{ name: "The best article"}
-  ]
+hackNewsClone.controller('ArticlesCtrl', function ArticlesCtrl($scope, ArticleFactory){
+  $scope.article = ArticleFactory.articles;
+  $scope.ArticleFactory = ArticleFactory;
 });
