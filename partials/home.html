@@ -1,1 +1,8 @@
-<h1>Hello</h1>
+<div class="row">
+  <h1>News Articles</h1>
+  <div ng-show="articles.length">
+    <ul>
+      <li ng-repeat="item in articles">{{item.name}}</li>
+    </ul>
+  </div>
+</div>
