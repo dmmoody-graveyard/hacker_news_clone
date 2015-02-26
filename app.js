@@ -5,4 +5,10 @@ hackNewsClone.config(function($stateProvider){
     url:"",
     templateUrl: "partials/home.html"
   });
+
+  $stateProvider.state('articles', {
+    url:"/articles/:articlesId",
+    templateUrl: "partials/articles.html",
+    controller: "CommentsCtrl"
+  });
 });

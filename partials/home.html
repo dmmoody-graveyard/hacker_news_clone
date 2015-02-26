@@ -4,6 +4,7 @@
     <ul>
       <li ng-repeat="item in articles">
         <a href="{{item.link}}" target="_blank"> {{ item.name }} </a> <span class="link">{{ item.link }}</span>
+        | <a ui-sref="articles({ articlesId: item.id})">comments</a>
       </li>
     </ul>
   </div>
